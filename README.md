@@ -39,3 +39,8 @@ The activated current represents the neuron’s output Iout is then fed into sub
 
 ## Schematic Circuit of the active current mirror
 ![image](https://github.com/user-attachments/assets/099f2807-71e5-40e0-8599-132548dfb163)
+
+## Pre Layout Simulation
+![image](https://github.com/user-attachments/assets/d42ddd9c-3dec-4e33-9f56-78103b43f73e)
+![image](https://github.com/user-attachments/assets/88999ccf-e574-4c57-be1b-e5cc5156d954)
+
