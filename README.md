@@ -1,4 +1,4 @@
-# Low_powerCM_ANN
+# Low power Current mirror based Artificial Neural Network
 
 This work explores the design and implementation of an analog artificial neural network (ANN) using low-power active current mirrors with the SKY130 130nm technology node using eSIM. An active input-regulated current mirror is utilized to scale input currents proportional to synaptic weights, enabling precise control of each input’s contribution to the neuron’s output. The proposed circuit provides substantial advantages in power efficiency, simplicity,and scalability, making it particularly suitable for low-power analog neural networks.
 
