@@ -18,3 +18,22 @@ The summed current Isum is then passed through a transistor emulating a sigmoid 
 The activated current represents the neuron’s output Iout is then fed into subsequent stages in a network.
 
 ## Instructions to download eSIM on Windows
+ eSim installation in Windows OS
+
+    i.      Download eSim for Windows OS from "https://esim.fossee.in/". Disable the antivirus (if any).
+
+    ii.     If MinGW and/or MSYS is already installed in your machine, then remove it from the
+            PATH environment variable as it may interfere with eSim and might not work as intended.
+
+    iii.    Now double click on eSim installer and then follow the instruction to install eSim.
+
+    iv.     Now, double click on the exe file to start the installation process. If a window appears, click Yes to complete the installation.
+    
+    v.      By default eSim will be installed in C drive, under an auto-generated FOSSEE Folder. Note that installation directory can neither be in ”Program Files” 
+            nor can contain any spaces in its path.
+    
+    vi.     eSim icon will be created on desktop. You can double click on the eSim icon created on the Desktop after installation.
+
+    iv.     To uninstall eSim and all of its components, run the uninstaller "uninst-eSim.exe" located at 
+            top-level eSim directory (where this INSTALL file can be found).
+
