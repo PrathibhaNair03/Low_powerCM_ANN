@@ -44,6 +44,9 @@ The activated current represents the neuron’s output Iout is then fed into sub
     iv.     To uninstall eSim and all of its components, run the uninstaller "uninst-eSim.exe" located at 
             top-level eSim directory (where this INSTALL file can be found).
 
+## Block diagram of the Low power current mirror based neuron 
+![image](https://github.com/user-attachments/assets/9af6334b-2bcb-451f-a6b7-30fb94eeb929)
+
 ## Schematic Circuit of the active current mirror
 ![image](https://github.com/user-attachments/assets/099f2807-71e5-40e0-8599-132548dfb163)
 
