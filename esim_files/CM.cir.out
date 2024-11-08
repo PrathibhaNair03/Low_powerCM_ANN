@@ -1,0 +1,36 @@
+* c:\users\hp\esim-workspace\cm\cm.cir
+
+.include avsd_opamp.sub
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+x1 net-_i1-pad2_ gnd net-_x1-pad3_ net-_sc1-pad1_ net-_sc1-pad2_ gnd avsd_opamp
+x2 net-_u2-pad1_ gnd net-_sc2-pad1_ net-_x1-pad3_ net-_sc3-pad2_ gnd avsd_opamp
+i1 net-_i1-pad1_ net-_i1-pad2_  dc 100u
+* u1  net-_sc4-pad1_ net-_sc1-pad1_ plot_i2
+v3 net-_u2-pad1_ gnd  dc 1.8
+v1 net-_x1-pad3_ gnd  dc 1.8
+v2 net-_i1-pad2_ gnd  dc 1.8
+* u2  net-_u2-pad1_ net-_sc3-pad1_ plot_i2
+* s c m o d e
+xsc3 net-_sc3-pad1_ net-_sc3-pad2_ net-_sc2-pad1_ net-_sc2-pad1_ sky130_fd_pr__nfet_01v8 
+xsc2 net-_sc2-pad1_ net-_sc1-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 
+xsc1 net-_sc1-pad1_ net-_sc1-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 
+xsc4 net-_sc4-pad1_ net-_i1-pad1_ ? sky130_fd_pr__res_high_po_0p69 1k
+v_u1 net-_sc4-pad1_ net-_sc1-pad1_ 0
+v_u2 net-_u2-pad1_ net-_sc3-pad1_ 0
+.tran 5e-03 30e-03 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot i(v_u1)
+plot i(v_u2)
+.endc
+.end
