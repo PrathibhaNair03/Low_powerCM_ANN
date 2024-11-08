@@ -57,3 +57,10 @@ The activated current represents the neuron’s output Iout is then fed into sub
 ## Future Work
 1. Stabilizing the active current mirror in terms of temperature
 2. Using Super-junction MOSFETs (SJ-MOSFETs) to achieve higher power efficiency and smaller package size.
+
+## Contributor
+Prathibha A Nair
+
+## Acknowledgment
+Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+Sumanto kar, Assistant Project Manager, FOSSEE
