@@ -16,6 +16,8 @@ Each input signal to the neuron is represented as a current Iini.These input cur
 
 The summed current Isum is then passed through a transistor emulating a sigmoid activation function.
 The activated current represents the neuron’s output Iout is then fed into subsequent stages in a network.
+![image](https://github.com/user-attachments/assets/15ce1554-e46f-4d88-9489-c5c51be0e6f2)
+
 
 ## Instructions to download eSIM on Windows
  eSim installation in Windows OS
@@ -44,3 +46,6 @@ The activated current represents the neuron’s output Iout is then fed into sub
 ![image](https://github.com/user-attachments/assets/d42ddd9c-3dec-4e33-9f56-78103b43f73e)
 ![image](https://github.com/user-attachments/assets/88999ccf-e574-4c57-be1b-e5cc5156d954)
 
+## Future Work
+1. Stabilizing the active current mirror in terms of temperature
+2. Using Super-junction MOSFETs (SJ-MOSFETs) to achieve higher power efficiency and smaller package size.
